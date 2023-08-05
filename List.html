@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="shortout icon" type="image/png/x-icon" href="oursite_imgs\htmllogo.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Secular+One&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Comic+Neue:wght@700&family=Lobster&family=Montserrat:wght@700&family=Noto+Sans:wght@700&family=Open+Sans&family=Oxygen&family=Roboto+Slab:wght@300&family=Secular+One&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1000px)" href="all_maps.css">
+    <link rel="stylesheet" media="screen and (max-width: 530px)" href="all_maps1.css"> -->
+
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .body1 {
+            background-color: #ffffff;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 2px -10px 30px grey;
+            height: 70px;
+            width: 100%;
+        }
+
+        .navbar img {
+            width: 8%;
+            height: 8%;
+        }
+
+        .btns ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            /* margin-top: 20px; */
+        }
+
+        #subs {
+            text-decoration: none;
+            /* margin: 0rem 0.4rem; */
+            margin-right: 20px;
+            border: 1px hidden black;
+            background-color: #92E3A9;
+            border-radius: 1rem;
+            padding: 0.6rem;
+            font-size: 1.4rem;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        @media(max-width: 988px){
+            
+            /* html{
+                font-size: 65%;
+            } */
+            .navbar{
+    height: 60px;
+}
+#heading h2{
+    font-size: 4rem;
+}
+#heading p{
+font-size: 2rem;
+}
+
+        }
+        @media(max-width:770px){
+            html{
+                max-width: 100%;
+                min-width: 100%;
+                font-size: 55%;
+            }
+            body{
+                max-width: 100%;
+                min-height: 100%;
+            }
+            .navbar{
+                max-width: 100%;
+                height: 60px;
+                /* min-width: 350%; */
+            }
+.navbar img{
+    width: 12%;
+    height: 12%;
+}
+            #subs{
+                font-size: 2.2rem;
+                padding: 8px;
+            } 
+        }
+        @media(max-width:652px){
+.navbar{
+    height: 60px;
+}
+.navbar img{
+    width: 13%;
+    height: 13%;
+}
+        }
+        @media(max-width:600px){
+            .navbar{
+                height: 60px;
+            }
+            .navbar img{
+                height: 15%;
+                width: 15%;
+            }
+        }
+        @media(max-width:510px){
+            .navbar img{
+                width: 17%;
+                height: 17%;
+            }
+            #subs{
+                font-size: 2.8rem;
+            }
+        }
+        @media(max-width:460px){
+            .navbar img{
+                width: 20%;
+                height: 20%;
+            }
+            #subs{
+                margin-right: 10px;
+            }
+
+        }
+        @media(max-width:420px){
+            .navbar img{
+                width: 20%;
+                height: 20%;
+            }
+            #subs{
+                font-size: 2.5rem;
+            }
+        }
+        @media(max-width:370px){
+            .navbar{
+                height: 50px;
+            }
+            .navbar img{
+                width: 25%;
+                height: 25%;
+            }
+            #subs{
+                margin-right: 10px;
+                font-size: 2.4rem;
+                padding: 8px;
+            }
+        }
+        @media(max-width:345px){
+            body{
+                max-width: 345px;
+                min-width: 400px;
+            }
+            .navbar img{
+                width: 23%;
+                height: 23%;
+            }
+            .navbar{
+                height: 60px;
+            }
+            #subs{
+                /* height: 30px; */
+                padding: 8px;
+                font-size: 3rem;
+            }
+        }
+
+
+
+        #heading {
+            text-align: center;
+            margin: auto;
+            margin-top: 70px;
+        }
+
+        #heading h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 35px;
+            margin: 0px;
+            color: rgb(0, 0, 0);
+            letter-spacing: 1px;
+            text-align: center;
+            
+        }
+
+        #heading p {
+            padding-top: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 20px;
+            /* font-weight: bolder; */
+            font-family: sans-serif;
+
+        }
+
+        .grid_contain {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            width: 80%;
+            margin: auto;
+
+            justify-content: center;
+        }
+        .grid_contain a{
+            text-decoration: none;
+        }
+
+        .grid_item {
+            border: 1px hidden #6109ad;
+            border-radius: 18px;
+            padding: 20px;
+            text-align: center;
+            /* background-color: rgb(219, 136, 136); */
+
+
+            margin: 50px;
+            height: 180px;
+            width: 130px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 12px rgb(128, 184, 128);
+            /* background: radial-gradient(circle, #a98ac5 0%, #6c1bb3 90%); */
+
+        }
+
+        .grid_item:hover {
+            /* box-shadow: 5px 5px 10px rgb(197, 197, 197);  */
+            cursor: pointer;
+            /* background-color:rgba(21, 202, 226, 0.514); */
+            transition: 1s;
+            /* background-color: #a98ac5; */
+            /* background: radial-gradient(circle, #a98ac5 0%, #7229b3 90%); */
+
+        }
+
+        .grid_item:hover img {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+
+        }
+
+        .grid_item h3 {
+            margin-top: 30px;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .grid_item h4 {
+            margin-top: 30px;
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: black;
+        }
+
+        .grid_item img {
+            margin-top: 10px;
+            height: 70px;
+            width: 70px;
+
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .six {
+            text-decoration: none;
+        }
+
+        #quote {
+            border: 1px hidden black;
+            text-align: center;
+            margin: auto;
+            width: 100%;
+            border-left: white;
+            border-right: white;
+            padding: 4px;
+            background-color:#92E3A9;
+            color: white;
+
+            /* font-family: cursive; */
+        }
+
+        #quote p {
+            font-weight: bolder;
+            /* font-style: italic; */
+            font-family: 'Montserrat', sans-serif;
+
+
+        }
+
+        /* foot section */
+        .foot {
+
+width: 80%;
+height: 25vh;
+border: 0.1em solid rgb(0, 0, 0);
+;
+text-align: center;
+margin: auto;
+margin-top: 70px;
+border-left-color: white;
+border-right-color: white;
+
+}
+
+.div {
+width: 80%;
+margin: auto;
+/* margin-top: 30px; */
+}
+
+.about {
+width: 120px;
+height: 45px;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 20px;
+background-color: white;
+
+/* margin-top: 35px; */
+text-decoration: none;
+cursor: pointer;
+transition: all 0.3s ease-out;
+/* margin-left: 200px;*/
+/*border-top-left-radius: px;
+border-bottom-right-radius: 10px;*/
+}
+
+.about:hover {
+cursor: pointer;
+/* transition: 0.7s; */
+
+
+}
+
+.about h3 {
+color: rgb(0, 0, 0);
+font-size: 1rem;
+padding-top: 15px;
+font-family: sans-serif;
+}
+
+.discord h3 {
+color: rgb(0, 0, 0);
+font-size: 1rem;
+padding-top: 15px;
+font-family: sans-serif;
+}
+
+.foot .div {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+
+}
+
+.foot .fab {
+margin-left: 60px;
+margin-right: 60px;
+/* margin-top: 45px; */
+
+color: black;
+}
+
+.foot .fab:hover {
+cursor: pointer;
+color: rgb(28, 208, 253);
+transition: 0.7s;
+
+}
+
+.discord {
+width: 120px;
+height: 45px;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 20px;
+background-color: rgb(255, 255, 255);
+
+/* margin-top: 35px; */
+/* margin-left: 200px;*/
+/*border-top-left-radius: px;
+border-bottom-right-radius: 10px;*/
+}
+
+.discord:hover {
+cursor: pointer;
+/*transition: 0.7s;*/
+
+}
+
+.div a {
+text-decoration: none;
+color: rgb(0, 0, 0);
+font-size: 1rem;
+font-weight: bolder;
+}
+
+/* .foot #top{
+
+width: 80%;
+height: 40vh;
+border: 0.1em solid rgb(0, 0, 0);
+text-align: center;
+margin: auto;
+/* margin-top: 100px;*/
+
+/*.foot #bottom{
+
+width: 80%;
+border: 1px solid rgb(0, 0, 0);
+text-align: center;
+margin: auto;
+margin-top: 150px;*/
+
+
+footer {
+width: 100%;
+text-align: center;
+margin: auto;
+}
+
+#love {
+text-align: center;
+margin: auto;
+margin-top: 20px;
+font-size: 1.4rem;
+font-family: sans-serif;
+}
+
+#love .far {
+color: red;
+
+}
+
+#copy {
+text-align: center;
+margin: auto;
+margin-top: 30px;
+font-size: 1.4rem;
+font-family: sans-serif;
+}
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .popup {
+            margin: 70px auto;
+            padding: 20px;
+            background-color: #92E3A9;
+            border-radius: 12px;
+            width: 30%;
+            position: relative;
+            transition: all 5s ease-in-out;
+        }
+
+        .popup h2 {
+            margin-top: 0;
+            color: rgb(255, 255, 255);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .popup .close:hover {
+            color: #000000;
+        }
+
+        .popup .content {
+            max-height: 30%;
+            overflow: auto;
+        }
+
+        .content P {
+            margin-top: 15px;
+            text-align: left;
+            color: white;
+            background-color: #92E3A9;
+            font-family: sans-serif;
+        }
+
+        @media screen and (max-width: 700px) {
+            .box {
+                width: 70%;
+            }
+
+            .popup {
+                width: 70%;
+            }
+        }
+            @media screen and (max-width: 1000px){
+                /* .grid_item{
+    /* left: 50%;
+    right: 50%; */
+html{
+    font-size: 55%;
+}
+.foot{
+    height: 120px;
+}
+#heading h2{
+    font-size: 4rem;
+    text-align: center;
+}
+#heading p{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.grid_contain {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    justify-content: center;
+}
+.about{
+    width: 80px;
+    height: 30px;
+}
+.about h3{
+    padding-top: 10px;
+}
+.discord{
+    width: 80px;
+    height: 30px;
+}
+.discord h3{
+    padding-top: 10px;
+}
+#love{
+    font-size: 20px
+}
+#copy{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.foot .div{
+    /* width: 60%; */
+    /* margin: auto; */
+    margin-top: 40px;
+}
+/* .grid_item{
+    width: 100px;
+    height: 130px;
+} */
+.foot .fa{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+            }
+            @media(max-width: 530px){
+                .grid_contain {
+    display: grid;
+    grid-template-columns: auto;
+
+    justify-content: center;
+}
+html{
+    margin: auto;
+}
+html{
+    font-size: 35%;
+}
+#heading h2{
+    font-size: 5rem;
+}
+#heading p{
+    font-size: 3rem;
+    padding-top: 10px;
+}
+.grid_item{
+    width: 150px;
+    height: 200px;
+}
+.grid_item h3{
+font-size: 25px;
+margin-top: 60px;
+}
+.grid_item h4{
+font-size: 21px;
+text-align: center;
+margin: auto;
+margin-top: 60px;
+}
+.grid_item img{
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+}
+.foot .fa{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.foot{
+    height: 100px;
+}
+.discord{
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+}
+.about h3{
+    font-size: 8px;
+    padding-top: 7px;
+}
+.discord h3{
+    font-size: 8px;
+    padding-top: 7px;
+}
+#love{
+    font-size: 15px
+}
+#copy{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.about{
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+}
+.foot .div{
+    margin-top: 40px;
+}
+            }
+            @media(max-width: 400px){
+                #love{
+    font-size: 15px
+}
+#copy{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+            }
+    </style>
+</head>
+
+<body>
+    <section class="body1">
+        <header class="head">
+
+            <nav class="navbar">
+                <div class="logo">
+                   <a href="index.html"><img src="assets/oursite_imgs\infinity_logo.png" alt=""></a> 
+                </div>
+                <div class="btns">
+                    <ul>
+                        <!-- <li><i class="far fa-search"></i></li> -->
+                        <li><a id="subs" href="/index.html#newsletterid">Subscribe</a></li>
+                    </ul>
+                    <!-- <a href=""><i class="far fa-search"></i></a>
+                        <a href="">subscribe</a> -->
+                </div>
+            </nav>
+
+            <div id="heading">
+                
+                <h2>ROADMAPS</h2>
+                <p>Created with the finest details, here are all the roadmaps that will land you up
+                    among the stars.</p>
+            </div>
+        </header>
+        <section class="grid_contain">
+
+            <a href="Net.html">
+                <div class="grid_item">
+                    <img src="assets/oursite_imgs/NET.png" alt="">
+                    <h3>.NET</h3>
+
+                </div>
+            </a>
+            <a href="angular.html"> 
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\angular.png" alt="">
+                    <h3>ANGULAR</h3>
+                </div>
+            </a>
+            <a href="animation.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\animation.png" alt="">
+                    <h4>ANIMATION</h4>
+                </div>
+            </a>
+            <a href="appdev.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\appdev.png" alt="">
+                    <h4>APP DEVELOPMENT</h4>
+                </div>
+            </a>
+            <a href="artificialint.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\AI.png" alt="">
+                    <h4>ARTIFICIAL INTELLIGENCE</h4>
+                </div>
+            </a>
+            <a href="arvr.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\AR_VR.png" alt="">
+                    <h3>AR & VR</h3>
+    
+                </div>
+            </a>
+            <a href="blockchain.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\blockchain.png" alt="">
+                    <h4>BLOCKCHAIN</h4>
+    
+                </div>
+            </a>
+            <a href="csharp.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\pngwing.com.png" alt="">
+                    <h3>C#</h3>
+    
+                </div>
+            </a>
+            <a href="c.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\pngwing.com1.png" alt="">
+                    <h3>C</h3>
+    
+                </div>
+            </a>
+            <a href="c++.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\pngegg.png" alt="">
+                    <h3>C++</h3>
+    
+                </div>
+            </a>
+            <a href="cybersec.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\cyber_security.png" alt="">
+    
+                    <h3>CYBER SECURITY</h3>
+                </div>
+            </a>
+            <a href="dart.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\dart.png" alt="">
+    
+                    <h3>DART</h3>
+                </div>
+            </a>
+            <a href="datascience.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\data_science.png" alt="">
+    
+                    <h3>DATA SCIENCE</h3>
+                </div>
+            </a>
+            <a href="devops.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\devops.png" alt="">
+    
+                    <h3>DEVOPS</h3>
+                </div>
+            </a>
+            <a href="django.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\django.png" alt="">
+    
+                    <h3>DJANGO</h3>
+                </div>
+            </a>
+            <a href="flask.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\flask.png" alt="">
+    
+                    <h3>FLASK</h3>
+                </div>
+            </a>
+            <a href="flutter.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\flutter.png" alt="">
+                    <h3>FLUTTER</h3>
+    
+                </div>
+            </a>
+            <a href="golang.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\go_lang.png" alt="">
+                    <h3>GO LANGUAGE</h3>
+    
+                </div>
+            </a>
+            <a href="graphicdes.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\graphic_design.png" alt="">
+                    <h3>GRAPHIC DESIGNER</h3>
+    
+                </div>
+            </a>
+            <a href="hibernate.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\hybernate.png" alt="">
+                    <h3>HIBERNATE</h3>
+    
+                </div>
+            </a>
+            <a href="iot.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\iot.png" alt="">
+                    <h4>INTERNET OF THINGS</h4>
+    
+                </div>
+            </a>
+            <a href="java.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\java.png" alt="">
+                    <h3>JAVA</h3>
+    
+                </div>
+            </a>
+            <!-- <a href="Javalin">
+                <div class="grid_item">
+                    <img src="oursite_imgs\javalin.png" alt="">
+                    <h3>JAVALIN</h3>
+    
+                </div>
+            </a> -->
+            <a href="javascr.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\js.png" alt="">
+                    <h4>JAVASCRIPT</h4>
+    
+                </div>
+            </a>
+            <a href="jquery.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\pngegg_jq.png" alt="">
+                    <h3>JQUERY</h3>
+    
+                </div>
+            </a>
+            <a href="keras.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\keras.png" alt="">
+                    <h3>KERAS</h3>
+    
+                </div>
+            </a>
+            <a href="kotllin.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\kotlin.png" alt="">
+                    <h3>KOTLIN</h3>
+    
+                </div>
+            </a>
+            <a href="laravel.html">
+                <div class="grid_item">
+                <img src="assets\oursite_imgs\laravel.png" alt="">
+                <h3>LARAVEL</h3>
+
+                </div>
+            </a>
+            <a href="ml.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\ml.png" alt="">
+                    <h4>MACHINE LEARNING</h4>
+    
+                </div>
+            </a>
+            <a href="matlab.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\matlab.png" alt="">
+                    <h3>MATLAB</h3>
+    
+                </div>
+            </a>
+            <a href="matplotlib.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\matplotlib.png" alt="">
+                    <h4>MATPLOTLIB</h4>
+                </div>
+            </a>
+           <a href="nodejs.html">
+            <div class="grid_item">
+                <img src="assets\oursite_imgs\node-js-black.png" alt="">
+                <h3>NODE.JS</h3>
+
+            </div>
+           </a>
+            <a href="numpy.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\numpy.png" alt="">
+                    <h3>NUMPY</h3>
+    
+                </div>
+            </a>
+            <!-- <a href="Opennn">
+                <div class="grid_item">
+                    <img src="oursite_imgs\opennn.png" alt="">
+                    <h3>OPENNN</h3>
+    
+                </div>
+            </a> -->
+            <a href="pandas.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\pandas.png" alt="">
+                    <h3>PANDAS</h3>
+    
+                </div>
+            </a>
+            <a href="placementint.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\placement.png" alt="">
+                    <h4>PLACEMENT INTERVIEW</h4>
+    
+                </div>
+            </a>
+            <a href="php.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\php.png" alt="">
+                    <h3>PHP</h3>
+    
+                </div>
+            </a>
+            <a href="Python.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\python.png" alt="">
+                    <h3>PYTHON</h3>
+    
+                </div>
+            </a>
+            <a href="pytorch.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\pytorch.png" alt="">
+                    <h3>PYTORCH</h3>
+    
+                </div>
+            </a>
+            <a href="r.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\R.png" alt="">
+                    <h3>R</h3>
+    
+                </div>
+            </a>
+            <a href="rails.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\rails.png" alt="">
+                    <h3>RAILS</h3>
+    
+                </div>
+            </a>
+            <a href="react.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\reactjs.png" alt="">
+                    <h3>REACT JS</h3>
+    
+                </div>
+            </a>
+            <a href="robotics.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\robotics.png" alt="">
+                    <h3>ROBOTICS</h3>
+    
+                </div>
+            </a>
+            <a href="ruby.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\ruby.png" alt="">
+                    <h3>RUBY</h3>
+    
+                </div>
+            </a>
+            <a href="scala.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\scala.png" alt="">
+                    <h3>SCALA</h3>
+    
+                </div>
+            </a>
+            <a href="spark.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\spark.png" alt="">
+                    <h3>SPARK</h3>
+    
+                </div>
+            </a>
+            <a href="spring.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\spring.png" alt="">
+                    <h3>SPRING</h3>
+    
+                </div>
+            </a>
+            <a href="swift.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\swift.png" alt="">
+                    <h3>SWIFT</h3>
+    
+                </div>
+            </a>
+            <a href="tensorflow.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\tensorflow.png" alt="">
+                    <h4>TENSORFLOW</h4>
+    
+                </div>
+            </a>
+            <a href="UI&UX.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\uiux.png" alt="">
+                    <h3>UI & UX</h3>
+    
+                </div>
+            </a>
+            <a href="vuejs.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\vue.js.png" alt="">
+                    <h3>VUE.JS</h3>
+    
+                </div>
+            </a>
+            <a href="WebDevelopment.html">
+                <div class="grid_item">
+                    <img src="assets\oursite_imgs\webd.png" alt="">
+                    <h4>WEB DEVELOPMENT</h4>
+    
+                </div>
+            </a>
+        </section>
+    </section>
+
+    <div id="quote">
+        <p>Consistency is the key to success !</p>
+    </div>
+    <footer>
+        <section class="foot">
+            <p id="top"></p>
+            <div class="div">
+                <a class="about" href="#popup1">
+                    <h3>ABOUT US</h3>
+                </a>
+                <a href="https://www.instagram.com/infinity_roadmaps/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://mobile.twitter.com/infinityroadmap" target="_blank"><i
+                        class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://discord.gg/undurpTwhJ" target="_blank" class="discord">
+                    <h3>DISCORD</h3>
+                </a>
+
+            </div>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>ABOUT US</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <p>
+                            Infinity Roadmap is an initiative to help every individual on their road to success.
+                            <br>
+                            Our mission is to cover all the possible roadmaps for our learners. <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Infinity Roadmap is an initiative under
+                            <strong>INFINTY EDUCATIONS.</strong> <br>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p id="love">lots of &nbsp;<i class="far fa-heart" aria-hidden="true"></i>&nbsp; from
+            &nbsp;<strong>INFINITY</strong></p>
+        <p id="copy"><i class="far fa-copyright" aria-hidden="true"></i> Copyright 2022. All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

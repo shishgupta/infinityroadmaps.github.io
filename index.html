@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortout icon" type="image/png/x-icon" href="oursite_imgs\htmllogo.jpeg">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* width: 100%; */
+            /* width: 100%; */
+            /* width: max-content; */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 2px -10px 30px grey;
+            height: 70px;
+            width: 100%;
+        }
+
+        .navbar img {
+            width: 8%;
+            height: 8%;
+        }
+
+        .btns ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            /* margin-top: 20px; */
+        }
+
+        #subs {
+            text-decoration: none;
+            /* margin: 0rem 0.4rem; */
+            margin-right: 20px;
+            border: 1px hidden black;
+            background-color: #92E3A9;
+            border-radius: 1rem;
+            padding: 0.6rem;
+            font-size: 1.4rem;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        #search-bar .uk-search-input {
+            /* margin-left: 450%; */
+            /* padding-top: 23px; */
+            /* margin-bottom: 10%; */
+            /* font-size: 20px; */
+            /* margin-top: 9%; */
+            /* width: 60%; */
+            /* border-right: none;
+     border-left: none;
+     border-top: none; */
+            border-bottom: 80% black;
+            background-color: transparent;
+            resize: none;
+            outline: none;
+
+        }
+
+        /* #search{
+            color: black;
+            background-color: rgb(238, 238, 238);
+            border-bottom: 1px solid black;
+            border-radius: 0rem;
+            width: 5rem;
+        } */
+        .photo img{
+            width: 25%;
+            height: 25%;
+            margin-left: 90px;
+            /* transform: rotate(180deg); */
+        }
+        .photo{
+            margin-top: -5%;
+            
+        }
+        .heading {
+            display: flex;
+            margin-top: 30px;
+            background-image: url(bgimg.png);
+            background-size: 240px;
+            background-repeat: no-repeat;
+            background-position-x: 25%;
+            background-position-y: 35%;
+
+        }
+
+        .heading p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-top: 125px;
+            margin-left: 50px;
+            
+        }
+
+        .heading img {
+            width: 500px;
+            height: 500px;
+            margin-top: 70px;
+            /* margin-left: 70px; */
+            /* float: right; */
+        }
+
+        .heading a {
+            border: 4px outset #92E3A9;
+            border-radius: 12px;
+            font-size: 1.4rem;
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            /* margin-top: 20px; */
+
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #road h2 {
+            text-align: center;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            /* font-size: 250%; */
+            font-size: 2.5rem;
+
+            /* margin-bottom: 130px; */
+        }
+
+        #road p {
+            text-align: center;
+            /* font-size: 140%; */
+            font-size: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .cards {
+            color: #92E3A9;
+            background-color: white;
+            /* margin-top: -110%; */
+        }
+
+        .card-container {
+            width: 100%;
+            margin: auto;
+            overflow-x: hidden;
+            display: flex;
+            background-color: #ffffff;
+            padding: 3rem;
+            justify-content: center;
+        }
+
+        .card {
+            min-width: 280px;
+            max-width: 280px;
+            height: 350px;
+            border-radius: 16px;
+            background-color: #ffffff;
+            box-shadow: -10px 0px 25px rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            transition: 0.2s;
+            text-decoration: none;
+            text-align: center;
+            /* color: black; */
+
+        }
+
+        /* @media(max-width: 998px) {
+            html {
+                font-size: 55%;
+
+            }
+        }
+
+        @media(max-width: 768px) {
+            html {
+                font-size: 45%;
+            }
+        } */
+        @media(max-width: 1230px){
+            .card{
+                max-width: 250px;
+                min-width: 250px;
+            }
+            .heading img{
+                width: 400px;
+                height: 400px;
+            }
+            html{
+                font-size: 85%;
+            }
+
+        }
+        @media screen and (max-width: 988px){
+            .card{
+                max-width: 220px;
+                min-width: 220px;
+            }
+            .heading img{
+                width: 340px;
+                height: 340px;
+            }
+            html{
+                font-size: 65%;
+            }
+            .navbar{
+    height: 60px;
+}
+#road h2{
+    font-size: 3rem;
+}
+#road p{
+                font-size: 2rem;
+            }
+        }
+        @media(min-width:800px){
+            
+        }
+        @media(max-width:770px){
+            html{
+                max-width: 100%;
+                min-width: 100%;
+                font-size: 55%;
+            }
+            body{
+                max-width: 100%;
+                min-height: 100%;
+            }
+            .heading img{
+                width: 280px;
+                height: 280px;
+            }
+            .navbar{
+                max-width: 100%;
+                /* min-width: 350%; */
+            }
+            .navbar{
+    height: 60px;
+}
+.navbar img{
+    width: 12%;
+    height: 12%;
+}
+.btns ul{
+                /* margin-top: 35px; */
+            }
+            #subs{
+                font-size: 2.2rem;
+                padding: 8px;
+            }
+            .heading{
+                background-size: 200px;
+                background-position-y: 60%;
+            }
+            #road p{
+                font-size: 2rem;
+            }
+            
+        }
+        @media(max-width:652px){
+            .heading p{
+                font-size: 2.2rem;
+            }
+.navbar{
+    height: 60px;
+}
+.navbar img{
+    width: 13%;
+    height: 13%;
+}
+.btns ul{
+                /* margin-top: 35px; */
+            }
+        }
+        @media(max-width:600px){
+            .heading img{
+                width: 240px;
+                height: 240px;
+            }
+            .photo img{
+                margin-top: 5%;
+
+            }
+            .heading a{
+                padding: 6px;
+            }
+            .heading{
+                background-size: 180px;
+            }
+            .navbar{
+                height: 60px;
+            }
+            .navbar img{
+                height: 15%;
+                width: 15%;
+            }
+            .btns ul{
+                /* margin-top: 30px; */
+            }
+            .heading{
+                background-size: 170px;
+                background-position-y: 70%;
+                margin-top: -20px;
+            }
+            #road{
+                margin-top: 70px;
+            }
+        }
+        @media(max-width:510px){
+            .heading p{
+                font-size: 1.8rem;
+                margin-top: 10px;
+                margin: auto;
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: center;
+
+            }
+            .heading img{
+                width: 250px;
+                height: 250px;
+                margin: auto;
+            }
+            .heading{
+                background-image: none;
+                background-size: 150px;
+                background-position-y: 90%;
+                margin-top: 20px;
+                flex-direction: column-reverse;
+            }
+            .navbar img{
+                width: 17%;
+                height: 17%;
+            }
+            #road{
+                margin-top: 60px;
+            }
+            
+
+        }
+        @media(max-width:460px){
+            .heading p{
+                font-size: 1.8rem;
+            }
+            .heading a{
+                font-size: 1.7rem;
+            }
+            .heading{
+                margin-top: 20px;
+            }
+            #road{
+                margin-top: 70px;
+            }
+            #road h2{
+                font-size: 2.5rem;
+            }
+            .navbar img{
+                width: 20%;
+                height: 20%;
+            }
+            #subs{
+                margin-right: 10px;
+            }
+
+        }
+        @media(max-width:420px){
+            .heading img{
+                width: 200px;
+                height: 200px;
+            }
+            .navbar img{
+                width: 23%;
+                height: 23%;
+            }
+            #subs{
+                font-size: 2rem;
+            }
+            #road{
+                margin-top: 70px;
+            }
+
+        }
+        @media(max-width:370px){
+            .heading p{
+                /* font-size: 1.4rem; */
+                /* margin-left: 10px; */
+            }
+            .heading img{
+                width: 220px;
+                height: 220px;
+            }
+            #road{
+                margin-top: 80px;
+            }
+            #road p{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            #road h2{
+                font-size: 3rem;
+            }
+            .heading{
+                background-size: 100px;
+                background-position-x: 20%;
+                background-position-y: 75%;
+                margin-top: 20px;
+                /* back */
+            }
+            .navbar{
+                height: 50px;
+            }
+            .navbar img{
+                width: 25%;
+                height: 25%;
+            }
+            #subs{
+                margin-right: 10px;
+                font-size: 1.8rem;
+            }
+            .swiper{
+                height: 550px;
+            }
+            .heading p{
+                /* margin-top: 100px; */
+                margin-left: 20px;
+                margin-right: 20px;
+                font-size: 2rem;
+
+            }
+            .heading a{
+                font-size: 2.3rem;
+                margin-top: 10px;
+            }
+        }
+        @media(max-width:345px){
+            body{
+                max-width: 345px;
+                min-width: 400px;
+            }
+            .heading{
+                margin-top: 0px;
+            }
+            .heading p{
+                /* margin-top: 100px; */
+                margin-left: 30px;
+                margin-right: 30px;
+                font-size: 2rem;
+
+            }
+            .heading a{
+                font-size: 2rem;
+            }
+            .heading img{
+                margin-top: 30px;
+                height: 200px;
+                width: 200px;
+
+            }
+            .navbar img{
+                width: 23%;
+                height: 23%;
+            }
+            .navbar{
+                height: 60px;
+            }
+            #subs{
+                /* height: 30px; */
+                padding: 8px;
+                font-size: 2rem;
+            }
+        }
+        
+
+        
+
+        .fas {
+            color: #92E3A9;
+            margin-top: 40px;
+        }
+
+        .fab {
+            color: #92E3A9;
+            margin-top: 40px;
+        }
+        .fad{
+            color: #92E3A9;
+            margin-top: 40px;
+
+        }
+
+        .card .category-title {
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        
+
+        .card .article-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .card:not(:first-child) {
+            margin-left: -130px;
+        }
+
+        .card:hover {
+            transform: translateY(-1rem);
+        }
+
+        .card:hover~.card {
+            transform: translateX(130px);
+        }
+        .swipe-wrapper{
+            align-items: center;
+        }
+        .swiper-slide {
+            /* margin-top: 10px; */
+            margin: auto;
+            width: 65%;
+            height: 70%;
+            border: 2px hidden black;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px grey;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+      /* text-align: center;
+      font-size: 18px;
+      background: rgb(189, 189, 189);
+      height: 400px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center; */
+    }
+    .swiper-slide-active{
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
+    .swiper-slide:hover{
+        cursor: pointer;
+    }
+    .swiper-slide h3{
+        /* position: absolute; */
+        /* top: 10%;*/
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4rem;
+    }
+    .swiper-slide .fab{
+        margin-top: 70px;
+    }
+    .swiper-slide .fas{
+        margin-top: 70px;
+    }
+        .swiper {
+            height: 450px;
+      margin-top: 0px;
+      /* width: 80%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto; */
+    }
+    .swiper-pagination{
+        padding-top: 5px;
+        height: 20px;
+    }
+    @media(min-width: 801px){
+        .swiper{
+            display: none;
+        }
+    }
+    @media(max-width: 800px){
+        .card-container{
+            display: none;
+        }
+    }
+
+        .news {
+            margin-top: 40px;
+            /* height: 520px; */
+        }
+
+        .newsletter {
+            width: 95%;
+            height: 500px;
+            margin: auto;
+            background-color: #92E3A9;
+            border: 1px hidden white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px #92E3A9;
+            /* bottom: 0; */
+
+        }
+
+        .newsletter h2 {
+            font-size: 3rem;
+            color: rgb(255, 255, 255);
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            padding-top: 20px;
+
+        }
+
+        .letter {
+            width: 50%;
+            height: 330px;
+            border: 4px solid white;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .letter h3 {
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+            font-size: 1.9rem;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        .letter p {
+            color: white;
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            margin-left: 30px;
+            margin-right: 10px;
+            margin-top: 30px;
+            font-weight: bold;
+            font-style: italic;
+            
+        }
+        #info{
+            margin-top: 20px;
+            width: 60%;
+        }
+#name{
+    margin-left: 30px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    
+}
+input{
+    border: 2px hidden white;
+    height: 25px;
+    width: 82%;
+    margin-top: 3px;
+    border-radius: 4px;
+    /* border-radius: 60px; */
+}
+#submit{
+    border: 3px outset rgb(231, 69, 19);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(255, 51, 0);
+    padding: 5px;
+    height: 40px;
+    width: 20%;
+    margin-left: 190px;
+    margin-top: 10px;
+    color: white;
+    background-color: #ce3131;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+#submit:hover{
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px white;
+    transition: 0.5s;
+}
+
+.form{
+    display: flex;
+}
+form{
+    margin-top: 20px;
+}
+#elogo img{
+    /* color: rgb(15, 13, 13); */
+     /* float:; */
+     /* top: 0%; */
+    /* margin-left: 150px; */
+    width:170px;
+    height: 170px;
+    margin-left: 20px;
+    /* margin-bottom: 30px; */
+}
+#imgemail{
+    margin-top: -20px;
+}
+@media(max-width:1024px){
+    .letter{
+        width: 60%;
+    }
+    .letter p{
+        font-size: 1.6rem;
+    }
+    #name{
+        font-size: 1.7rem;
+    }
+
+}
+@media(max-width:770px){
+    .newsletter{
+        height: 450px;
+    }
+    .letter{
+height: 310px;
+width: 68%;
+    }
+    .letter p{
+        font-size: 1.8rem;
+    }
+    #name{
+        font-size: 1.5rem;
+        /* margin-left: 15px; */
+    }
+    #elogo img{
+        width: 140px;
+        height: 140px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #submit{
+        margin-left: 100px;
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:628px){
+    .letter{
+        width: 75%;
+    }
+    #submit{
+        width: 150px;
+        margin-left: 20px;
+        font-size: 1.7rem;
+    }
+    .letter p{
+        font-size: 1.6rem;
+        margin-left: 15px;
+    }
+    #name{
+        font-size: 1.5rem;
+        margin-left: 15px;
+    }
+    #elogo img{
+        width: 100px;
+        height: 100px;
+        /* margin-left: 10px; */
+        /* margin-right: 10px; */
+        margin-top: 30px;
+    }
+
+}
+@media(max-width:425px){
+    .letter{
+        margin-top: 30px;
+        width: 80%;
+    }
+    #name{
+        margin-left:35px;
+    }
+    #info{
+        width: 100%;
+
+    }
+    #elogo{
+        display: none;
+    }
+    #submit{
+        width: 78%;
+        margin-left: 26px;
+    }
+
+}
+@media(max-width:320px){
+    .letter{
+        height: 320px;
+    }
+    .letter p{
+        font-size: 15px;
+    }
+    #name{
+        font-size: 1.7rem;
+    }
+    #submit{
+        font-size: 1.9rem;
+    }
+}
+
+
+
+
+
+.foot {
+
+            width: 80%;
+            height: 25vh;
+            border: 0.1em solid rgb(0, 0, 0);
+            ;
+            text-align: center;
+            margin: auto;
+            margin-top: 70px;
+            border-left-color: white;
+            border-right-color: white;
+
+}
+
+        .div {
+            width: 80%;
+            margin: auto;
+            /* margin-top: 30px; */
+        }
+
+        .about {
+            width: 120px;
+            height: 45px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            background-color: white;
+
+            /* margin-top: 35px; */
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+            /* margin-left: 200px;*/
+            /*border-top-left-radius: px;
+border-bottom-right-radius: 10px;*/
+        }
+
+        .about:hover {
+            cursor: pointer;
+            /* transition: 0.7s; */
+
+
+        }
+
+        .about h3 {
+            color: rgb(0, 0, 0);
+            font-size: 1rem;
+            padding-top: 15px;
+            font-family: sans-serif;
+        }
+
+        .discord h3 {
+            color: rgb(0, 0, 0);
+            font-size: 1rem;
+            padding-top: 15px;
+            font-family: sans-serif;
+        }
+
+        .foot .div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+
+        }
+
+        .foot .fab {
+            margin-left: 60px;
+            margin-right: 60px;
+            /* margin-top: 45px; */
+            margin-bottom: 35px;
+            color: black;
+        }
+
+        .foot .fab:hover {
+            cursor: pointer;
+            color: rgb(28, 208, 253);
+            transition: 0.7s;
+
+        }
+
+        .discord {
+            width: 120px;
+            height: 45px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+
+            /* margin-top: 35px; */
+            /* margin-left: 200px;*/
+            /*border-top-left-radius: px;
+border-bottom-right-radius: 10px;*/
+        }
+
+        .discord:hover {
+            cursor: pointer;
+            /*transition: 0.7s;*/
+
+        }
+
+        .div a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+
+        /* .foot #top{
+
+width: 80%;
+height: 40vh;
+border: 0.1em solid rgb(0, 0, 0);
+text-align: center;
+margin: auto;
+/* margin-top: 100px;*/
+
+        /*.foot #bottom{
+
+width: 80%;
+border: 1px solid rgb(0, 0, 0);
+text-align: center;
+margin: auto;
+margin-top: 150px;*/
+
+
+        footer {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+        }
+
+        #love {
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 1.4rem;
+            font-family: sans-serif;
+        }
+
+        #love .far {
+            color: red;
+
+        }
+
+        #copy {
+            text-align: center;
+            margin: auto;
+            margin-top: 30px;
+            font-size: 1.4rem;
+            font-family: sans-serif;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .popup {
+            margin: 70px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            width: 30%;
+            position: relative;
+            transition: all 5s ease-in-out;
+        }
+
+        .popup h2 {
+            margin-top: 0;
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .popup .close:hover {
+            color: #000000;
+        }
+
+        .popup .content {
+            max-height: 30%;
+            overflow: auto;
+        }
+
+        .content P {
+            margin-top: 15px;
+            text-align: left;
+            font-family: sans-serif;
+        }
+
+        @media screen and (max-width: 700px) {
+            .box {
+                width: 70%;
+            }
+
+            .popup {
+                width: 70%;
+            }
+        }
+        @media(max-width:1000px){
+            .about{
+    width: 80px;
+    height: 30px;
+}
+.about h3{
+    padding-top: 7px;
+}
+.discord{
+    width: 80px;
+    height: 30px;
+}
+.discord h3{
+    padding-top: 7px;
+}
+.foot .div{
+    /* width: 60%; */
+    /* margin: auto; */
+    margin-top: 25px;
+}
+#love{
+    font-size: 20px
+}
+#copy{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* .grid_item{
+    width: 100px;
+    height: 130px;
+} */
+.foot .fa{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.content p{
+    /* font-size: 1.1rem; */
+}
+        }
+        @media(max-width: 530px){
+html{
+    margin: auto;
+}
+/*html{
+    font-size: 35%;
+} */
+.foot{
+    height: 125px;
+}
+.foot .fab{
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+.discord{
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+}
+.about{
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+}
+#love{
+    font-size: 15px
+}
+#copy{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.about h3{
+    font-size: 8px;
+    padding: 5px;
+}
+.discord h3{
+    font-size: 8px;
+    padding: 5px;
+}
+.foot .div{
+    margin-top: 20px;
+}
+.content p{
+    font-size: 1.6rem;
+}
+            }
+            @media(max-width: 400px){
+                #love{
+    font-size: 15px
+}
+#copy{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+            }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets\oursite_imgs\infinity_logo.png" alt="">
+        </div>
+        <div class="btns">
+            <ul>
+                <!-- <li><i class="far fa-search"></i></li> -->
+                <li><a id="subs" href="#newsletterid">Subscribe</a></li>
+            </ul>
+            <!-- <a href=""><i class="far fa-search"></i></a>
+                <a href="">subscribe</a> -->
+        </div>
+    </nav>
+    <header>
+        <div class="heading">
+            <p>"Everyone tells you to be on the right path but nobody tells you the right path so here
+                we are with all the roadmaps you'll ever need."<br> <br><a href="List.html">Explore</a></p>
+            <img src="assets/oursite_imgs/Programming-rafiki.png" alt="">
+        </div>
+    </header>
+
+    <section class="cards">
+
+        <!-- <div class="photo">
+            <img src="oursite_imgs\bgimg1.png">
+        </div> -->
+        <div id="road">
+            <h2>ROADMAPS</h2>
+            <p>“Learn whatever you want to with our curated roadmaps”</p>
+        </div>
+        <div class="card-container">
+
+    <a class="card" href="javascr.html">
+        <div class="cards">
+            <header class="article-header">
+                <div>
+                    <div class="category-title">
+                        Article
+                    </div>
+                </div>
+                <div class="article-title">
+                    JavaScript
+                </div>
+                <i class="fab fa-js-square fa-7x"></i>
+            </header>
+        </div>
+    </a>
+
+            
+                <a class="card" href="ml.html">
+                    <div class="cards">
+                        <header class="article-header">
+                            <div>
+                                <div class="category-title">
+                                    Article
+                                    <span class="date">Jan 19, 2020</span>
+                                </div>
+                            </div>
+                            <div class="article-title">
+                                Machine learning
+                            </div>
+                            <i class="fas fa-laptop-code fa-7x"></i>
+                        </header>
+                    </div>
+                </a>
+
+<a class="card" href="Python.html">
+                <div class="cards">
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                Article
+                                <span class="date">Jan 19, 2020</span>
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            Python
+                        </div>
+                        <i class="fab fa-python fa-7x"></i>
+                    </header>
+                </div>
+            </a>
+            
+            <a class="card" href="react.html">
+                <div>
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                Article
+                                <span class="date">Jan 19, 2020</span>
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            React
+                        </div>
+                        <i class="fab fa-react fa-7x"></i>
+                    </header>
+                </div>
+            </a>
+            <a class="card" href="datascience.html">
+                <div>
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                Article
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            Data Science
+                        </div>
+                        <i class="fas fa-database fa-7x"></i>
+                    </header>
+                </div>
+            </a>
+            <a class="card" href="java.html">
+                <div>
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                Article
+                                <span class="date">Jan 19, 2020</span>
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            Java
+                        </div>
+                        <i class="fab fa-java fa-7x"></i>
+                    </header>
+                </div>
+            </a>
+            <a class="card" href="List.html">
+                <div>
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                Article
+                                <span class="date">Jan 19, 2020</span>
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            View More
+                        </div>
+                        <i class="fas fa-angle-double-right fa-7x"></i>
+                    </header>
+                </div>
+            </a>
+            <!-- <div class="swiper-pagination"><h3>hii</h3></div> -->
+            
+
+
+        </div>
+
+    </section>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <a href="JavaScript" class="swiper-slide">
+                    <h3>JavaScript</h3>  
+                    <i class="fab fa-js-square fa-10x"></i>
+            </a>
+            <a href="" class="swiper-slide">
+                <h3>Machine learning</h3>  
+                <i class="fas fa-laptop-code fa-10x"></i>
+        </a>
+        <a href="Python" class="swiper-slide">
+            <h3>Python</h3>  
+            <i class="fab fa-python fa-10x"></i>
+    </a>
+    <a href="React" class="swiper-slide">
+        <h3>React</h3>  
+        <i class="fab fa-react fa-10x"></i>
+</a>
+<a href="DataScience" class="swiper-slide">
+    <h3>Data Science</h3>  
+    <i class="fas fa-database fa-10x"></i>
+</a>
+<a href="Java" class="swiper-slide">
+    <h3>Java</h3>  
+    <i class="fab fa-java fa-10x"></i>
+</a>
+<a href="List" class="swiper-slide">
+    <h3>View More</h3>  
+    <i class="fas fa-angle-double-right fa-10x"></i>
+</a>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="news" id="newsletterid">
+        <div class="newsletter" id="newsletterid">
+            <h2>Subscribe NOW!</h2>
+            <div class="letter">
+                <!-- <h3>Subscribe NOW!</h3> -->
+                <p> A weekly email letter to help you stay updated on every new happening in the
+                    tech world.</p>
+                <form method="post" name="subsform">
+                    <div class="form">
+                        <div id="info">
+                        <div id="name">
+                        NAME <br>
+                        <input type="text" name="Name" placeholder=" &nbsp; Name">
+                        </div>
+                    <div id="name">
+                        EMAIL <br>
+                        <input type="email" name="Email" placeholder=" &nbsp; mail@example.com">
+                        </div>
+                        </div>
+                        <div id="elogo">
+                            <div id="imgemail"><img src="assets\oursite_imgs\emailnews.png" alt=""></div>
+                            <!-- <i class="fas fa-envelope-open-text fa-6x"></i> -->
+                            </div>
+                        </div>
+                    
+                    
+                    <div>
+                        <input type="submit" value="Subscribe"  id="submit" name="submit">
+                        </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <section class="foot">
+            <p id="top"></p>
+            <div class="div">
+                <a class="about" href="#popup1">
+                    <h3>ABOUT US</h3>
+                </a>
+                <!-- <a href=""><i class="fab fa-facebook fa-2x"></i></a> -->
+                <a href="https://www.instagram.com/infinity_roadmaps/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://mobile.twitter.com/infinityroadmap" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://discord.gg/undurpTwhJ" target="_blank" class="discord">
+                    <h3>DISCORD</h3>
+                </a>
+
+            </div>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>ABOUT US</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <p>
+                            Infinity Roadmap is an initiative to help every individual on their road to success.
+                            <br>
+                            Our mission is to cover all the possible roadmaps for our learners. <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Infinity Roadmap is an initiative under
+                            <strong>INFINTY EDUCATIONS.</strong> <br>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p id="love">lots of &nbsp;<i class="far fa-heart" aria-hidden="true"></i>&nbsp; from
+            &nbsp;<strong>INFINITY</strong></p>
+        <p id="copy"><i class="far fa-copyright" aria-hidden="true"></i> Copyright 2022. All Rights Reserved</p>
+    </footer>
+
+
+
+
+<script>
+        // subscription form 
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxDF0qyu4pTwBDevCw6XZDEnmaYRWQe4ujKgi3ddPCk-13EfMCZmSYnKeBeIwDBdrwe/exec'
+            const form = document.forms['subsform']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'post', body: new FormData(form)})
+                .then(response => alert("Thanks for Subscribing to our Newsletter!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="module">
+      var swiper = new Swiper('.swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 40,
+      centeredSlides: true,
+    //   grabCursor: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
+    });
+</script>
+
+</body>
+
+</html>
